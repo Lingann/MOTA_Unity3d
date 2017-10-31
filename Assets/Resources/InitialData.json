@@ -1,0 +1,242 @@
+﻿{
+    "Player": [
+        {
+            "Levels": 0,
+            "HP": 1000,
+            "ATK": 10,
+            "DEF": 10,
+            "Golds": 0,
+            "YellowKeys": 1,
+            "BlueKeys": 1,
+            "RedKeys": 1
+        }
+    ],
+
+    "Monster": [
+        {
+            "Id": 0,
+            "Name": "绿色史莱姆",
+            "Career": "普通",
+            "Introduction": "虽然很弱小，但很萌萌哒",
+            "HP": 50,
+            "Atk": 20,
+            "Def": 1,
+            "Gold": 1,
+            "Exp": 1
+        },
+        {
+            "Id": 1,
+            "Name": "红色史莱姆",
+            "Career": "普通",
+            "HP": 70,
+            "Atk": 15,
+            "Def": 2,
+            "Gold": 2,
+            "Exp": 2
+        },
+        {
+            "Id": 2,
+            "Name": "小蝙蝠",
+            "Career": "普通",
+            "HP": 100,
+            "Atk": 20,
+            "Def": 5,
+            "Gold": 3,
+            "Exp": 3
+        },
+        {
+            "Id": 3,
+            "Name": "骷髅人",
+            "Career": "普通",
+            "HP": 110,
+            "Atk": 25,
+            "Def": 5,
+            "Gold": 5,
+            "Exp": 4
+        },
+        {
+            "Id": 4,
+            "Name": "青头怪",
+            "Career": "普通",
+            "HP": 200,
+            "Atk": 35,
+            "Def": 10,
+            "Gold": 5,
+            "Exp": 5
+        },
+        {
+            "Id": 5,
+            "Name": "骷髅士兵",
+            "Career": "普通",
+            "HP": 150,
+            "Atk": 40,
+            "Def": 20,
+            "Gold": 8,
+            "Exp": 6
+        },
+        {
+            "Id": 6,
+            "Name": "初级法师",
+            "Career": "法师",
+            "HP": 125,
+            "Atk": 50,
+            "Def": 25,
+            "Gold": 10,
+            "Exp": 7
+        },
+        {
+            "Id": 7,
+            "Name": "大蝙蝠",
+            "Career": "普通",
+            "HP": 150,
+            "Atk": 65,
+            "Def": 30,
+            "Gold": 10,
+            "Exp": 8
+        },
+        {
+            "Id": 8,
+            "Name": "兽面人",
+            "Career": "普通",
+            "HP": 300,
+            "Atk": 75,
+            "Def": 45,
+            "Gold": 13,
+            "Exp": 10
+        },
+        {
+            "Id": 9,
+            "Name": "骷髅队长",
+            "Career": "普通",
+            "HP": 400,
+            "Atk": 90,
+            "Def": 50,
+            "Gold": 15,
+            "Exp": 12
+        },
+        {
+            "Id": 10,
+            "Name": "石头怪人",
+            "Career": "普通",
+            "HP": 500,
+            "Atk": 115,
+            "Def": 65,
+            "Gold": 15,
+            "Exp": 15
+        },
+        {
+            "Id": 11,
+            "Name": "麻衣法师",
+            "Career": "法师",
+            "HP": 250,
+            "Atk": 120,
+            "Def": 70,
+            "Gold": 20,
+            "Exp": 17
+        },
+        {
+            "Id": 12,
+            "Name": "初级卫兵",
+            "Career": "普通",
+            "HP": 450,
+            "Atk": 150,
+            "Def": 90,
+            "Gold": 22,
+            "Exp": 19
+        },
+        {
+            "Id": 13,
+            "Name": "红蝙蝠",
+            "Career": "普通",
+            "Introduction": "前十几层最大的Boos",
+            "HP": 550,
+            "Atk": 160,
+            "Def": 90,
+            "Gold": 25,
+            "Exp": 20
+        },
+        {
+            "Id": 14,
+            "Name": "高级法师",
+            "Career": "法师",
+            "HP": 100,
+            "Atk": 200,
+            "Def": 110,
+            "Gold": 30,
+            "Exp": 25
+        }
+    ],
+
+    "Props": [
+        {
+            "Id": 0,
+            "Name": "黄钥匙",
+            "Num": 1,
+            "Multiple": 1,
+            "Property": "黄钥匙"
+        },
+        {
+            "Id": 1,
+            "Name": "蓝钥匙",
+            "Num": 1,
+            "Multiple": 1,
+            "Property": "蓝钥匙"
+        },
+        {
+            "Id": 2,
+            "Name": "红钥匙",
+            "Num": 1,
+            "Multiple": 1,
+            "Property": "红钥匙"
+        },
+        {
+            "Id": 3,
+            "Name": "黄色大钥匙",
+            "Num": 10,
+            "Multiple": 1,
+            "Property": "黄钥匙"
+        },
+        {
+            "Id": 4,
+            "Name": "红宝石",
+            "Num": 2,
+            "Multiple": 1,
+            "Property": "攻击力"
+        },
+        {
+            "Id": 5,
+            "Name": "蓝宝石",
+            "Num": 4,
+            "Multiple": 1,
+            "Property": "防御力"
+        },
+        {
+            "Id": 6,
+            "Name": "红血瓶",
+            "Num": 75,
+            "Multiple": 1,
+            "Property": "生命值"
+        },
+        {
+            "Id": 7,
+            "Name": "蓝血瓶",
+            "Num": 200,
+            "Multiple": 1,
+            "Property": "生命值"
+        },
+        {
+            "Id": 8,
+            "Name": "铁剑",
+            "Num": 10,
+            "Multiple": 1,
+            "Property": "攻击力"
+        },
+        {
+            "Id": 9,
+            "Name": "铁盾",
+            "Num": 10,
+            "Multiple": 1,
+            "Property": "防御力"
+        }
+    ]
+}

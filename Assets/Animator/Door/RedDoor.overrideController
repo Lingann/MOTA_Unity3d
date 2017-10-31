@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: RedDoor
+  m_Controller: {fileID: 9100000, guid: a01611b7ec6d12e418afd10e83c1b2ab, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 6377cbd06e0c4ef4e9c5f6eb1e393e69, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 3286afe8299a01f44bf602020dc084fb, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 6fcf0bc6b21cb0042b58816f165edad0, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 196f104d31620c941a10c1ca31b80b22, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: d9d08193dad9a1443a4a3c21f884c1be, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6c0dabbad546ef446bd8401195d7289b, type: 2}

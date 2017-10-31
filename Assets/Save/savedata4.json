@@ -1,0 +1,1 @@
+{"Map":[{"CurrentLayerIndex":0,"EnableLayers":[0]}],"Player":[{"PrefabPath":"Prefabs/Player","ParentPath":"","DirectionX":0.0,"DirectionY":0.0,"PositionX":0.5,"PositionY":-5.5,"PositionZ":20.0,"Levles":0,"Golds":0,"EXP":0,"HP":1000,"ATK":10,"DEF":10,"YellowKeys":1,"BlueKeys":1,"RedKeys":1}],"Monsters":[],"Doors":[],"PropsData":[],"NPCs":[]}

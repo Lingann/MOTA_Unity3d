@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<doc>
+  <members>
+    <assembly>
+      <name>UnityEngine.AR</name>
+    </assembly>
+    <member name="T:UnityEngine.XR.Tango.MeshReconstructionServerComponent">
+      <summary>
+        <para>
+                A component that manages an instance of MeshReconstructionServer.
+            </para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.XR.Tango.MeshReconstructionServerComponent.generateColor">
+      <summary>
+        <para>
+                    When true, sets vertex colors based on image data from the color camera. Default is true.
+
+                    See Also: MeshReconstructionConfig.generateColor
+                </para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.XR.Tango.MeshReconstructionServerComponent.maxDepth">
+      <summary>
+        <para>
+                    The maximum distance in meters from the depth camera from which meshes will be generated. Default is 3.50 meters.
+
+                    See Also: MeshReconstructionConfig.maxDepth
+                </para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.XR.Tango.MeshReconstructionServerComponent.minDepth">
+      <summary>
+        <para>
+                    The minimum distance in meters from the depth camera from which meshes will be generated. Default is 0.6 meters.
+
+                    SA MeshReconstructionConfig.minDepth
+                </para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.XR.Tango.MeshReconstructionServerComponent.minNumVertices">
+      <summary>
+        <para>
+                    The minimum number of vertices that every connected component in the mesh should consist of. Defaults to 1. Smaller components (typically noise) will be deleted.
+
+                    See Also: MeshReconstructionConfig.minNumVertices
+                </para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.XR.Tango.MeshReconstructionServerComponent.resolution">
+      <summary>
+        <para>
+                    The mesh reconstruction resolution in meters. Default is 0.03 meters (3 centimeters).
+
+                    SA MeshReconstructionConfig.resolution
+                </para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.XR.Tango.MeshReconstructionServerComponent.server">
+      <summary>
+        <para>
+                    The MeshReconstructionServer managed by this component.
+                </para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.XR.Tango.MeshReconstructionServerComponent.updateMethod">
+      <summary>
+        <para>
+                    The algorithm used during mesh generation. The default is UpdateMethod.Traversal.
+
+                    See Also: MeshReconstructionConfig.updateMethod
+                </para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.XR.Tango.MeshReconstructionServerComponent.useParallelIntegration">
+      <summary>
+        <para>
+                    When true, will use multi-threading for the reconstruction updates. Default is false.
+
+                    See Also: MeshReconstructionConfig.useParallelIntegration
+                </para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.XR.Tango.MeshReconstructionServerComponent.useSpaceClearing">
+      <summary>
+        <para>
+                    When true, will clear away free space along the depth observations. If enabled, 3D reconstruction will create higher quality meshes at a cost to performance. Default is false.
+
+                    See Also: MeshReconstructionConfig.useSpaceClearing
+                </para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.XR.Tango.MeshReconstructionServerComponent.ClearMeshes">
+      <summary>
+        <para>
+                    Removes all generated meshes from the reconstruction server.
+
+                    See Also: MeshReconstructionServer.ClearMeshes
+                </para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.XR.Tango.MeshReconstructionServerComponent.GenerateSegmentAsync(UnityEngine.XR.Tango.SegmentGenerationRequest,UnityEngine.XR.Tango.MeshReconstructionServer/SegmentReadyDelegate)">
+      <summary>
+        <para>Call this to start the process of generating mesh data for the specified mesh segment. The mesh is typically ready by the next frame, but may take multiple frames to create. The generated mesh will be delivered through the specified MeshReconstructionServerComponent.SegmentReadyDelegate.</para>
+      </summary>
+      <param name="request">A SegmentGenerationRequest used to generate the specified segment.</param>
+      <param name="onSegmentReady">Delegate called when the generation of this segment is complete.</param>
+    </member>
+    <member name="M:UnityEngine.XR.Tango.MeshReconstructionServerComponent.GetChangedSegments(UnityEngine.XR.Tango.MeshReconstructionServer/SegmentChangedDelegate)">
+      <summary>
+        <para>Query for updated or added mesh segments.</para>
+      </summary>
+      <param name="onSegmentChanged">Delegate to call for each changed mesh segment.</param>
+    </member>
+    <member name="T:UnityEngine.XR.Tango.MeshReconstructionServerComponent.MeshReconstructionDefaults">
+      <summary>
+        <para>
+                A static struct for MeshReconstructionServerComponent default parameters.
+
+                See Also: MeshReconstructionConfig
+            </para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.XR.Tango.MeshReconstructionServerComponent.MeshReconstructionDefaults.generateColor">
+      <summary>
+        <para>True: The default value for MeshReconstructionServerComponent.generateColor.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.XR.Tango.MeshReconstructionServerComponent.MeshReconstructionDefaults.maxDepth">
+      <summary>
+        <para>3.5: The default value for MeshReconstructionServerComponent.maxDepth.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.XR.Tango.MeshReconstructionServerComponent.MeshReconstructionDefaults.minDepth">
+      <summary>
+        <para>0.6: The default value for MeshReconstructionServerComponent.minDepth.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.XR.Tango.MeshReconstructionServerComponent.MeshReconstructionDefaults.minNumVertices">
+      <summary>
+        <para>1: The default value for MeshReconstructionServerComponent.minNumVertices.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.XR.Tango.MeshReconstructionServerComponent.MeshReconstructionDefaults.resolution">
+      <summary>
+        <para>0.03: The default value for MeshReconstructionServerComponent.resolution.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.XR.Tango.MeshReconstructionServerComponent.MeshReconstructionDefaults.updateMethod">
+      <summary>
+        <para>UpdateMethod.Traversal: The default value for MeshReconstructionServerComponent.updateMethod.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.XR.Tango.MeshReconstructionServerComponent.MeshReconstructionDefaults.useParallelIntegration">
+      <summary>
+        <para>False: The default value for MeshReconstructionServerComponent.useParallelIntegration.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.XR.Tango.MeshReconstructionServerComponent.MeshReconstructionDefaults.useSpaceClearing">
+      <summary>
+        <para>False: The default value for MeshReconstructionServerComponent.useSpaceClearing.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEngine.XR.Tango.TangoSpatialMapper">
+      <summary>
+        <para>
+                A component derived from MeshReconstructionServerComponent which also manages the generation of meshes and creation of GameObjects for you.
+
+                This component will create a separate GameObject for each mesh segment (voxel cell) managed by the underlying MeshReconstructionServer.
+
+                All the GameObjects created by this component will be parented to the GameObject on which this component exists.
+            </para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.XR.Tango.TangoSpatialMapper.desiredSegmentQueueSize">
+      <summary>
+        <para>The target queue size for mesh segment generation. Defaults to 2.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.XR.Tango.TangoSpatialMapper.enableCollisions">
+      <summary>
+        <para>Enable or disable each mesh segment's MeshCollider. Defaults to true.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.XR.Tango.TangoSpatialMapper.enableRendering">
+      <summary>
+        <para>If true, enables a MeshRenderer component on the GameObject for each mesh segment. Defaults to true.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.XR.Tango.TangoSpatialMapper.gameObjects">
+      <summary>
+        <para>
+                    Get an ICollection of GameObjects, one for each mesh segment generated by this component.
+                </para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.XR.Tango.TangoSpatialMapper.generateCollisionMesh">
+      <summary>
+        <para>If true, generates a collision mesh and applies it to each mesh segment's MeshCollider. Defaults to true.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.XR.Tango.TangoSpatialMapper.generateNormals">
+      <summary>
+        <para>If true, requests per-vertex normals be generated and written to the supplied MeshFilter for each mesh segment.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.XR.Tango.TangoSpatialMapper.gridIndexToGameObjectDict">
+      <summary>
+        <para>A Dictionary of GridIndex to GameObject representing a mesh segment.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.XR.Tango.TangoSpatialMapper.invalidGridIndexInfoPair">
+      <summary>
+        <para>A KeyValuePair of GridIndex and StaleSegmentInfo representing an invalid pair. Used in TangoSpatialMapper.GetNextGridIndexToGenerate to distinguish a valid segment.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.XR.Tango.TangoSpatialMapper.layer">
+      <summary>
+        <para>The GameObject.layer for each mesh segment's GameObject.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.XR.Tango.TangoSpatialMapper.numSegmentsBeingGenerated">
+      <summary>
+        <para>The number of mesh segments currently being generated in the background.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.XR.Tango.TangoSpatialMapper.physicsMaterial">
+      <summary>
+        <para>The PhysicMaterial to use for each mesh segment's GameObject's MeshCollider.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.XR.Tango.TangoSpatialMapper.renderMaterial">
+      <summary>
+        <para>If specified, every mesh segment's GameObject's MeshRenderer will use this material.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.XR.Tango.TangoSpatialMapper.staleSegments">
+      <summary>
+        <para>A Dictionary of GridIndex to TangoSpatialMapper.StaleSegmentInfo. This is used to track mesh segments that require regeneration.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.XR.Tango.TangoSpatialMapper.ApplyPropertiesToAllGameObjects">
+      <summary>
+        <para>
+                    Applies the current settings to all GameObjects, updating or creating components as necessary.
+
+                    See Also: TangoSpatialMapper.UpdateComponents
+                </para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.XR.Tango.TangoSpatialMapper.BuildGenerationRequest(UnityEngine.XR.Tango.GridIndex)">
+      <summary>
+        <para>Creates a SegmentGenerationRequest for the mesh segment at the specified GridIndex.</para>
+      </summary>
+      <param name="gridIndex">The GridIndex indicating the mesh segment to generate.</param>
+      <returns>
+        <para>A SegmentGenerationRequest for the specified GridIndex.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.XR.Tango.TangoSpatialMapper.CreateGameObject(UnityEngine.XR.Tango.GridIndex)">
+      <summary>
+        <para>Creates a new GameObject as a child of the GameObject this component is on.</para>
+      </summary>
+      <param name="gridIndex">The GridIndex indicating which mesh segment this GameObject represents.</param>
+      <returns>
+        <para>A new GameObject. The name of the GameObject will be "Tango Segment i j k" where (i, j, k) represent the GridIndex. No components are created yet.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.XR.Tango.TangoSpatialMapper.GetNextGridIndexToGenerate">
+      <summary>
+        <para>Get the GridIndex that should be generated next.</para>
+      </summary>
+      <returns>
+        <para>A GridIndex representing the mesh segment that should be generated next.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.XR.Tango.TangoSpatialMapper.GetOrCreateGameObject(UnityEngine.XR.Tango.GridIndex)">
+      <summary>
+        <para>Returns an existing or creates a new GameObject for the mesh segment at the specified GridIndex.</para>
+      </summary>
+      <param name="gridIndex">The GridIndex indicating which mesh segment this GameObject represents.</param>
+      <returns>
+        <para>A GameObject for the GridIndex.</para>
+      </returns>
+    </member>
+    <member name="T:UnityEngine.XR.Tango.TangoSpatialMapper.MapperDefaults">
+      <summary>
+        <para>
+                A static struct for TangoSpatialMapper default parameters.
+
+                See Also: MeshReconstructionConfig, MeshReconstructionServerComponent.MeshReconstructionDefaults, TangoSpatialMapper
+            </para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.XR.Tango.TangoSpatialMapper.MapperDefaults.desiredSegmentQueueSize">
+      <summary>
+        <para>2: The default value for TangoSpatialMapper.desiredSegmentQueueSize.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.XR.Tango.TangoSpatialMapper.MapperDefaults.enableCollisions">
+      <summary>
+        <para>True: The default value for TangoSpatialMapper.enableCollisions.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.XR.Tango.TangoSpatialMapper.MapperDefaults.enableRendering">
+      <summary>
+        <para>True: The default value for TangoSpatialMapper.enableRendering.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.XR.Tango.TangoSpatialMapper.MapperDefaults.generateCollisionMesh">
+      <summary>
+        <para>True: The default value for TangoSpatialMapper.generateCollisionMesh.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.XR.Tango.TangoSpatialMapper.MapperDefaults.generateNormals">
+      <summary>
+        <para>True: The default value for TangoSpatialMapper.generateNormals.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.XR.Tango.TangoSpatialMapper.MapperDefaults.layer">
+      <summary>
+        <para>0: The default value for TangoSpatialMapper.layer.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEngine.XR.Tango.TangoSpatialMapper.MeshChangedAction">
+      <summary>
+        <para>Delegate called when a mesh changes (added or updateD). Called from an implementation of MeshReconstructionServer.SegmentChangedDelegate.</para>
+      </summary>
+      <param name="gridIndex">The [[GridIndex] of the mesh segment which changed.</param>
+      <param name="changeType">The SegmentChange type.</param>
+      <param name="updateTime">A timestamp of the change, represented in seconds, since application statup.</param>
+    </member>
+    <member name="T:UnityEngine.XR.Tango.TangoSpatialMapper.MeshReadyAction">
+      <summary>
+        <para>Delegate called when a mesh has been generated. Called from an implementation of MeshReconstructionServer.SegmentReadyDelegate.</para>
+      </summary>
+      <param name="generatedSegmentData">A SegmentGenerationResult representing the mesh that was generated.</param>
+      <param name="result"></param>
+    </member>
+    <member name="?:UnityEngine.XR.Tango.TangoSpatialMapper.OnMeshChanged(UnityEngine.XR.Tango.TangoSpatialMapper/MeshChangedAction)">
+      <summary>
+        <para>An event which fires when a mesh segment has changed (added or updated). See TangoSpatialMapper.MeshChangedAction.</para>
+      </summary>
+      <param name="value"></param>
+    </member>
+    <member name="?:UnityEngine.XR.Tango.TangoSpatialMapper.OnMeshReady(UnityEngine.XR.Tango.TangoSpatialMapper/MeshReadyAction)">
+      <summary>
+        <para>An event which fires when a mesh segment has been generated. See TangoSpatialMapper.MeshReadyAction.</para>
+      </summary>
+      <param name="value"></param>
+    </member>
+    <member name="M:UnityEngine.XR.Tango.TangoSpatialMapper.OnResetProperties">
+      <summary>
+        <para>
+                    Called when properties (e.g. TangoSpatialMapper.enableCollisions, TangoSpatialMapper.enableRendering) should be updated due to serialization changes.
+
+                    This can be triggered during editor undo/redo or by the animation system. Calls TangoSpatialMapper.ApplyPropertiesToAllGameObjects to apply the changes to existing [[GameObject]s.
+                </para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.XR.Tango.TangoSpatialMapper.OnSegmentChanged(UnityEngine.XR.Tango.GridIndex,UnityEngine.XR.Tango.SegmentChange,System.Double)">
+      <summary>
+        <para>Callback supplied to MeshReconstructionServer.GetChangedSegments. MeshReconstructionServer.GetChangedSegments is called every frame from inside this component's Update method.</para>
+      </summary>
+      <param name="gridIndex">The [[GridIndex] of the mesh segment which changed.</param>
+      <param name="changeType">The SegmentChange type.</param>
+      <param name="updateTime">A timestamp of the change, represented in seconds, since application statup.</param>
+    </member>
+    <member name="M:UnityEngine.XR.Tango.TangoSpatialMapper.OnSegmentReady(UnityEngine.XR.Tango.SegmentGenerationResult)">
+      <summary>
+        <para>Callback supplied to MeshReconstructionServer.GenerateSegmentAsync. Used to inform the component when a mesh generation request has completed.</para>
+      </summary>
+      <param name="generatedSegmentData">A SegmentGenerationResult representing the mesh that was generated.</param>
+      <param name="result"></param>
+    </member>
+    <member name="T:UnityEngine.XR.Tango.TangoSpatialMapper.StaleSegmentInfo">
+      <summary>
+        <para>
+                Contains information about mesh segments (voxels) that have changed but have not yet been (re)generated.
+
+                See Also: MeshReconstructionConfig, MeshReconstructionServerComponent, TangoSpatialMapper
+            </para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.XR.Tango.TangoSpatialMapper.StaleSegmentInfo.changeType">
+      <summary>
+        <para>The type of change, either SegmentChange.Added or SegmentChange.Updated.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.XR.Tango.TangoSpatialMapper.StaleSegmentInfo.lastUpdateTime">
+      <summary>
+        <para>A timestamp indicating when the mesh segment was last updated.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.XR.Tango.TangoSpatialMapper.UpdateComponents(UnityEngine.GameObject)">
+      <summary>
+        <para>Applies the current settings to a GameObject, updating or creating components as necessary.</para>
+      </summary>
+      <param name="gameObject">The GameObject to which settings are applied.</param>
+    </member>
+  </members>
+</doc>

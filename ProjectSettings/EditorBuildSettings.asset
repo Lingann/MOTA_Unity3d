@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Troll Bridge Studios/2D Starter Kit/_Scenes/Demos/Demo Start.unity
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: Assets/Troll Bridge Studios/2D Starter Kit/_Scenes/Additional Scenes (Do
+      not run)/MainMenu.unity
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: Assets/Troll Bridge Studios/2D Starter Kit/_Scenes/Additional Scenes (Do
+      not run)/MainWorld.unity
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: Assets/Troll Bridge Studios/2D Starter Kit/_Scenes/Additional Scenes (Do
+      not run)/HouseMd.unity
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: Assets/Troll Bridge Studios/2D Starter Kit/_Scenes/Additional Scenes (Do
+      not run)/HouseLrg.unity
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: Assets/Troll Bridge Studios/2D Starter Kit/_Scenes/Additional Scenes (Do
+      not run)/HouseSml.unity
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: Assets/Troll Bridge Studios/2D Starter Kit/_Scenes/Additional Scenes (Do
+      not run)/InnBasement.unity
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/_Secene/MoTa.unity
+    guid: e4fa2d945b3471f4e9818caa05bd3521

@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - fakeWall
+  - Stairs
+  - Wall
+  - Props
+  - NPC
+  - Monster
+  - Door
+  - layer
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Character
+  - Cavans
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Floor
+    uniqueID: 2279685981
+    locked: 0
+  - name: Stairs
+    uniqueID: 4124198827
+    locked: 0
+  - name: Player
+    uniqueID: 3108819495
+    locked: 0
+  - name: Props
+    uniqueID: 3552458405
+    locked: 0
+  - name: Monster And NPC
+    uniqueID: 1501050255
+    locked: 0
+  - name: Door
+    uniqueID: 1817165351
+    locked: 0
+  - name: Wall
+    uniqueID: 3680846151
+    locked: 0
+  - name: UI
+    uniqueID: 2302309147
+    locked: 0

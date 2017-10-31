@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<content>
+  <dialogue name="精灵">
+      <sentence>
+        <role>勇者</role>
+        <detail>Is the tower where the devil trapped a kidnapped princess?</detail>
+      </sentence>
+      <sentence>
+        <role>精灵</role>
+        <detail>Welcome Warrior. Please be sure to defeat devil.Item cross is needed to go the place where the devil is.</detail>
+      </sentence>
+      <sentence>
+        <role>精灵</role>
+        <detail>Bring Cross to me after getting it. Please take a bunch of keys. Take care of you. There is a powerful dragon in tower.</detail>
+      </sentence>
+    </dialogue>
+    <dialogue name="老者">
+      <sentence>
+        <role>老者</role>
+        <detail>年轻人，切勿慌张。你看那遥指浮上只青光，却不留其细腻</detail>
+      </sentence>
+      <sentence>
+        <role>勇者</role>
+        <detail>你tm在给我装逼，老子弄死你。</detail>
+      </sentence>
+      <sentence>
+        <role>老者</role>
+        <detail>年轻人，你这是干什么。你要宝物，给你就是了，何必要动手呢。</detail>
+      </sentence>
+    </dialogue>
+  <dialogue name="商人">
+    <sentence>
+      <role>商人</role>
+      <detail>小伙子，我这里有几本武功秘籍，我看你骨骼精奇，我就便宜卖给你怎么样</detail>
+    </sentence>
+    <sentence>
+      <detail>快来看看，这些都是好东西</detail>
+      <option action="jump">
+        <item>跳转到与精灵对话</item>
+        <jump to="精灵">0</jump>
+      </option>
+      <option action="purchase">
+        <item>太白真经</item>
+        <price cost="Gold">50</price>
+        <value obtain="Atk">10</value>
+      </option>
+      <option action="obtain">
+        <item>增加生命值</item>
+        <value obtain="HP">1000</value>
+      </option>
+      <option action ="obtain">
+        <item>葵花宝典</item>
+        <value obtain="Def">15</value>
+      </option>
+    </sentence>
+
+  </dialogue>
+</content>
